@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>The DOM Part 1</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,7 +21,49 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <h1>Manipulating things in the DOM</h1>
+
+        <p>JS uses the DOM to manipulate various elements in an HTML doc. The DOm stand for document object model and it represents every element in an HTML document. When you us JS to change edit or otherwise modify the DOM you are said to be traversing the DOM.</p>
+
+        <p class="getThisJQuery"> Get this and change it using JS querySelector method.</p>
+
+        <p>querySelector() is a JS method that allows you to reach into an HTML doc and select either a class(.) or an id(#) and perform some kind of method or function on it.  In the above example we used querySelector to grab getThisQuery and then used textContent another method to change the text using JS.</p>
+
+        <h2>Maniplulating things using getElementByID</h2>
+
+        <p>getElementById uses the ID attribute in your HTML elements to select then edit and modify your HTML. Its an older method, but is widely supported. getElementById only works on IDs.</p>
+
+        <p id="getThisId">Get this using JS getElementById.</p>
+
+        <h2>Getting input from an HTML Form</h2>
+
+        
+            <p>What's your favorite animal?</p>
+            <input type="text" class="myAnimal" placeholder="Enter you favorite animal here..">
+
+            <input type="submit" onclick="submitAnswer()" value="Submit">
+
+            <p class="response"></p>
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
